@@ -2,8 +2,8 @@ import { randomUUID } from "crypto";
 import { BaseEntity, BeforeInsert, Column, CreateDateColumn, Entity, PrimaryColumn } from "typeorm";
 import { Message } from "../../../../features/message/domain/models/messageModel";
 
-@Entity({ name: "Messages" })
-export class ContactEntity extends BaseEntity implements Message {
+@Entity({ name: "message" })
+export class MessageEntity extends BaseEntity implements Message {
     @PrimaryColumn()
     id: string;
 

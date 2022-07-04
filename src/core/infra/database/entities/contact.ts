@@ -2,7 +2,7 @@ import { randomUUID } from "crypto";
 import { BaseEntity, BeforeInsert, Column, CreateDateColumn, Entity, PrimaryColumn } from "typeorm";
 import { Contact } from "../../../../features/contact/domain/models/contactModel";
 
-@Entity({ name: "Contacts" })
+@Entity({ name: "contact" })
 export class ContactEntity extends BaseEntity implements Contact {
     @PrimaryColumn()
     id: string;

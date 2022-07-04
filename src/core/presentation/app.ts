@@ -22,10 +22,10 @@ export default class App {
         });
 
         const contactRoutes = new ContactRouter().init(routes);
-        // const messageRoutes = new MessageRouter().init(routes);
+        const messageRoutes = new MessageRouter().init(routes);
 
         this.express.use(contactRoutes);
-        // this.express.use(messageRoutes);
+        this.express.use(messageRoutes);
         this.express.use(routes);
     }
     public start() {
